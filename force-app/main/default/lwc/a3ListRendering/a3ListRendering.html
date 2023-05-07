@@ -1,0 +1,29 @@
+<template>
+
+
+    <lightning-card title="LIST RENDERING" >
+
+        <h1>MANAV :: {meyveListesi}</h1>
+
+     <template for:each={meyveListesi} for:item="meyveler">
+
+        <p key={meyveler}> Meyve Sepeti :: {meyveler}</p>
+
+     </template>
+
+    </lightning-card>
+
+    <lightning-card title="ITERATOR">
+
+        <template iterator:it={meyveListesi} >
+            <p key={it.value} if:true={it.first}>IT FIRST</p>
+            <p key={it.value}> {it.value}</p>
+            <p key={it.value} if:true={it.last}>IT LAST</p>
+            
+            
+        </template>
+
+
+    </lightning-card>
+    
+</template>

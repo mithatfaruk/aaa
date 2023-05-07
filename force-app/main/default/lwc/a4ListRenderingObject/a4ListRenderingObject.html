@@ -1,0 +1,18 @@
+<template>
+
+    <lightning-card title="LIST RENDERING OBJECT">
+      <template for:each={cicekListesi} for:item="cicekler">
+        
+        <ul key={cicekler.id}>   
+            <div style="border: 2px solid black;">       
+        <p >Çiçek Adı:: {cicekler.name}</p>
+        <p >Çiçek Familya:: {cicekler.familya}</p>
+        <img src={cicekler.imgUrl} width="300px" height="200">
+            </div>
+        </ul>
+        
+      </template>  
+
+    </lightning-card>
+    
+</template>

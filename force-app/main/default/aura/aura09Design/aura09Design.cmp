@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="subject"  type="string"/>
+    <lightning:card title="Aura Design ">
+       <p>Aura Design Purpose </p>
+     <h1>{!v.subject} this is from DESIGN</h1>
+    </lightning:card>
+	
+</aura:component>

@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Resume">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Name" value={name} onchange={handleNameChange}></lightning-input>
+            <lightning-input label="Email" value={email} onchange={handleEmailChange}></lightning-input>
+            <lightning-input label="Phone" value={phone} onchange={handlePhoneChange}></lightning-input>
+            <lightning-input label="Address" value={address} onchange={handleAddressChange}></lightning-input>
+            <template for:each={experiences} for:item="experience">
+                <lightning-input key={experience.id} label="Experience" value={experience.value} onchange={handleExperienceChange} data-id={experience.id}></lightning-input>
+            </template>
+            <lightning-button label="Add Experience" onclick={addExperience}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

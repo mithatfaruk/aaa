@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable" >
+	
+    <p>Bu component tab oluşturmak için yapıldı</p>
+</aura:component>

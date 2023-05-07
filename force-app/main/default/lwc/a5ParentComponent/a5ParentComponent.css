@@ -1,0 +1,14 @@
+h1{
+    color: aquamarine;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+c-a5-child-component {
+    color: gold;
+    --stylingHook: black;
+    border-style: dashed;
+    padding: 5px;
+}

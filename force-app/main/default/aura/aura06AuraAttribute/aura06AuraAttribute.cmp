@@ -1,0 +1,52 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" 
+                			access="global" >
+    
+    <!--Basic types-->
+    <aura:attribute name="ItemName"     type="String"  default="Bag"/>
+    <aura:attribute name="SerialNumber" type="Long"    default="1"/>
+    <aura:attribute name="Quantity"     type="Integer" default="2"/>
+    <aura:attribute name="Price"        type="Decimal" default="blue"/>
+    <aura:attribute name="PurchaseDate" type="Date"    default="2018-11-9"/>
+    <aura:attribute name="Dispatched"   type="Boolean" default="true"/>
+    <aura:attribute name="Color"        type="String"  default="blue"/>
+	
+    <lightning:card  title="Basic types">
+        
+        <p>ItemName ==> {!v.ItemName}</p>
+        <p>SerialNumber ==> {!v.SerialNumber}</p>
+        <p>Quantity ==> {!v.Quantity}</p>
+        <p>Dispatched ==> {!v.Dispatched}</p>
+        
+    </lightning:card>
+    
+    <!--Collection types-->
+    <aura:attribute name="ColorArray"  type="String[]" default="['red', 'green', 'blue']"/>
+    <aura:attribute name="ColorList"   type="List"     default="['red', 'green', 'blue']"/>
+    <aura:attribute name="ColorMap"    type="Map"      default="{a: 'red', b: 'green', c: 'blue'}"/>
+    <aura:attribute name="ColorSet"    type="Set"      default="['red', 'green', 'blue','red']"/>
+    
+     <lightning:card  title="Collection types">
+        
+        <strong>Array Values</strong>
+         <aura:iteration items="{!v.ColorArray}" var="color">
+         		<div>{!color}</div>
+         </aura:iteration>
+         
+        <strong>List Values</strong>
+         <aura:iteration items="{!v.ColorList}" var="clr">
+         		<div>{!clr}</div>
+         </aura:iteration>
+         
+         <strong>Map values</strong>
+         <div>{!v.ColorMap.a}</div>
+         <div>{!v.ColorMap.b}</div>
+         <div>{!v.ColorMap.c}</div>
+        
+         <strong> Set Values</strong>
+           <aura:iteration items="{!v.ColorList}" var="color" indexVar="index">
+         		<div>{!color}</div>
+         </aura:iteration>
+    </lightning:card>
+    
+    
+</aura:component>

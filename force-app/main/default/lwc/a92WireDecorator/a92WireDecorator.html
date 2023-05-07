@@ -1,0 +1,28 @@
+<template>
+
+    <lightning-card title="@ WIRE UYGULAMASI" >
+        <template for:each={butunAccountlar.data} for:item="acc" >
+            <ol key={acc.Id} >
+                <li>
+                    <p>Acc Name::{acc.Name}</p>
+                    <p>Acc Rating::{acc.Rating}</p>
+
+                </li>
+
+
+
+
+
+            </ol>
+
+
+
+        </template>
+            
+
+
+
+
+    </lightning-card>
+    
+</template>

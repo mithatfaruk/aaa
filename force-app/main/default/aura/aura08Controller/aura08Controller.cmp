@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+        <lightning:card title="Aura controller ">
+           <p>did you see the alert 22 </p>
+          <lightning:button variant="brand"
+                                 label="SAVE"
+                                 title="Brand action"
+                                 onclick="{! c.onclickHandler }" />
+       </lightning:card>
+</aura:component>

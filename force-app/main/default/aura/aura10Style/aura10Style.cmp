@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <lightning:card title="Aura STYLE ">
+       <p class='pTag'>Lutfen rengime bir bakin </p>
+    </lightning:card>
+     <p class='pTag slds-text-heading_large'>ben card disindayim RENK nasil </p>
+     <div class="blue mavi" >
+          I am blue today !!!
+      </div>
+    <div class="different">
+        Let your unique awesomeness and positive energy inspire confidence in others.
+    </div>
+	
+</aura:component>

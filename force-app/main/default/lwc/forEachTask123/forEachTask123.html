@@ -1,0 +1,23 @@
+<template>
+
+    <lightning-card title="FOR EACH EXAMPLE TASK 123">
+        <template for:each={cars} for:item="cr">
+           
+            <ol key={cr.Id}>
+                <div style="border: 2px solid green"> 
+                <li>
+                    <p>Car Brand={cr.brand}</p>
+                    <p>Car Model={cr.model}</p>
+                    <p>Car Year={cr.year}</p>
+                    <img src={cr.picLink} width="100" height="100">
+                </li>
+                </div>
+            </ol>
+        
+        </template>
+
+
+
+    </lightning-card>
+    
+</template>

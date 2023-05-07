@@ -1,0 +1,22 @@
+.THIS {
+   color:red;
+}
+.THIS.pTag{
+    color:green;
+}
+.THIS.blue{
+     color:blue;
+    background:lightgrey;
+    margin:50px;
+}
+.THIS.mavi{
+   color:blue;
+    background:lightgrey;
+    margin:50px;
+}
+.THIS.different {
+    color:green;
+    border: solid rgb(0, 132, 255) 3px;
+    padding: 1.2rem;
+    margin: 3rem;
+}

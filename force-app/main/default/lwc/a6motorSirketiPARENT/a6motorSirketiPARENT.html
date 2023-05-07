@@ -1,0 +1,45 @@
+<template>
+    
+<lightning-card >
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col">
+          <span>1</span>
+          <lightning-input 
+    type="text"
+    label="Motor Gücü Gir"
+    onchange={handleInput}
+    ></lightning-input>
+        </div>
+        <div class="slds-col">
+          <span>2</span>
+          <lightning-input 
+    type="text"
+    label="Marka Gir"
+    onchange={handleInput2}
+    ></lightning-input>
+        </div>
+        <div class="slds-col">
+          <span>3</span>
+          <lightning-input 
+    type="text"
+    label="Model Gir"
+    onchange={handleInput3}
+    ></lightning-input>
+        </div>
+      </div>
+
+<c-a6-motor-hakkinda
+
+   motorgucugoster={mpower} 
+   arabamarkasi={carbrand}
+   arabamodeli={carmodel}
+            >
+
+
+
+</c-a6-motor-hakkinda>
+
+
+</lightning-card>
+
+</template>

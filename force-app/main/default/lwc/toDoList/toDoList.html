@@ -1,0 +1,89 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <lightning-card title="To Do List" style="font-size: larger; width:100%; ">
+  
+<p slot="footer">
+  <lightning-layout pull-to-boundary="small" vertical-align="bottom">
+  
+      <lightning-layout-item padding="horizontal-small" flexibility="grow" >
+          <lightning-input 
+          
+          type="text"            
+          placeholder="Enter new task"
+          onchange={addList}>
+          </lightning-input>                   
+      </lightning-layout-item>
+
+      <lightning-layout-item padding="horizontal-small" >
+        <lightning-button 
+        variant="brand" 
+        label="Add"               
+        onclick={handleClick} 
+        class="slds-m-left_x-small">
+       </lightning-button> 
+      </lightning-layout-item>
+ 
+</lightning-layout>
+</p>
+
+           
+      <lightning-layout vertical-align="center">
+          <lightning-layout-item padding="around-small">
+
+              <ul class="slds-has-dividers_around-space">            
+              <template for:each={toDoList} for:item="task">                    
+
+
+                  <li class="slds-has-dividers_around-space" key={task.id}>
+                 <lightning-layout  vertical-align="center"
+                                    horizontal-align="spread">
+
+                  <lightning-layout-item padding="around-small">
+                      <div class="slds-box slds-box_small">
+                          <p>{task.subject}</p>
+                      </div>  
+                  </lightning-layout-item>
+
+                  <lightning-layout-item padding="around-small">                
+                              <lightning-button-icon 
+                                icon-name="utility:delete"
+                                alternative-text="delete"
+                                onclick={handleDelete}
+                                title="delete"
+                                name={taskId}>
+                                
+                              </lightning-button-icon>                                  
+                  </lightning-layout-item>
+
+
+                 </lightning-layout>
+                     
+
+                  </li>
+
+              </template>
+              
+
+          </ul>
+          </lightning-layout-item>
+
+          
+
+
+      </lightning-layout>
+
+
+     
+  
+
+
+
+      
+     
+
+
+
+
+
+  </lightning-card>
+</template>

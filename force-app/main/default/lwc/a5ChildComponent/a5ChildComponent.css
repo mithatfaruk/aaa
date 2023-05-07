@@ -1,0 +1,15 @@
+h1{
+    color:black;
+}
+p{
+    color:chartreuse;
+    background-color: brown;
+}
+.nice{
+    background-color: var(--stylingHook, green);
+    font-style: italic;
+}
+.slds-col{
+    border-radius: 4px solid;
+    
+}

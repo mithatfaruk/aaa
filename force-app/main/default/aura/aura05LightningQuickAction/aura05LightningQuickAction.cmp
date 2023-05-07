@@ -1,0 +1,7 @@
+<aura:component implements="force:lightningQuickAction" >
+	    <lightning:card  title="Lightning Quick Action">
+          <p>Bu component Lightning Quick Action için oluşturuldu</p>
+   
+    
+    </lightning:card>
+</aura:component>

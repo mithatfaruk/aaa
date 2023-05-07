@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="DECORATORLAR">
+
+        <lightning-input
+        type="text"
+        label="ADINIZI GİRİNİZ"
+        onchange={handleAd} ></lightning-input>
+        <lightning-input
+        type="text"
+        label="YAŞINIZI GİRİNİZ"
+        onchange={handleYas} ></lightning-input>
+
+        <h1>Adı ::{bireyler.name}</h1>
+        <h1>Yaşı ::{bireyler.yas}</h1>
+
+    </lightning-card>
+</template>

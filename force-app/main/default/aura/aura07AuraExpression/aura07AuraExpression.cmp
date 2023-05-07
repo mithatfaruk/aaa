@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId"
+                access="global" >
+	
+    <aura:attribute type="string"  name="welcome" default="Aura Dersine hosgeldiniz!!"/>
+    <lightning:card title="Aura Expressions">
+    <p>ATTRIBUTE EXPRESSION {!v.welcome} </p>
+      <lightning:button variant="brand" label="Brand" title="Brand action" onclick="{! c.hosgeldiniz }" />
+    </lightning:card>
+</aura:component>

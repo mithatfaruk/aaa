@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" >
+    <aura:attribute type="String" name="isim" default="Ahmet" />
+    <aura:attribute type="String" name="recordId" />
+    
+  
+    <lightning:card footer="Card Footer" title="Lightning Record Page">
+          <p>Bu component Lightning Record Page için oluşturuldu</p>
+    <br></br>
+    <p>Attribute olarak oluşturulan değişken {!v.isim}</p>
+    <p>Attribute olarak oluşturulan değişken {!v.recordId}</p>
+    
+    </lightning:card>
+</aura:component>

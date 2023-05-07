@@ -1,0 +1,35 @@
+<template>
+
+  <lightning-card title="CONDITIONAL RENDERING">
+    <lightning-input 
+    type="checkbox"
+    label="Flag Control"
+    name="input1"
+    checked={flag}
+    onchange={handleFlag} >
+    </lightning-input>  
+    <template if:true={flag}>
+        <h1>FLAG TRUE</h1>
+    </template>
+    <template if:false={flag}>
+        <h1>FLAG FALSE</h1>
+    </template>
+
+  </lightning-card> 
+
+<h1>*******************************************</h1>
+   <lightning-card title="CONDITIONAL RENDERING" >
+    <lightning-input label="Şifrenizi girin" 
+    type="password" 
+    onchange={handlePasswordInput}></lightning-input>
+    <template if:true={isPasswordValid}>
+        <p>HOŞGELDİNİZ</p>
+    </template>
+    <template if:false={isPasswordValid}>
+        <p>ŞİFRE YANLIŞ</p>
+    </template>
+  </lightning-card> 
+
+
+  
+</template>

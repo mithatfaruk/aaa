@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="CREATE CONTACT">
+        <lightning-input 
+        type="text"
+        label="Please Enter Name"
+        onchange={handleName}></lightning-input>
+        <lightning-input 
+        type="text"
+        label="Please SurName"
+        onchange={handleSurname}></lightning-input>
+        <lightning-input 
+        type="text"
+        label="Please Enter Title"
+        onchange={handleTitle}></lightning-input>
+
+        <lightning-button 
+        variant="success" 
+        label="Contact Oluştur" 
+        title="Successful action" 
+        onclick={handleClick} 
+        class="slds-m-left_x-small"></lightning-button>
+
+
+
+
+    </lightning-card>
+    
+</template>
